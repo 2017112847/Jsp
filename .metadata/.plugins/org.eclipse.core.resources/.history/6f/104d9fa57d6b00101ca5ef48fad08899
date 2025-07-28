@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSP 내장객체 - pageContext</title>
+</head>
+<body>
+	<h3>JSP 내장객체 - pageContext</h3>
+	<h4>forward</h4>
+		<a href = "./proc/forword1.jsp">표준 페이지 요청1</a></dr>
+		<a href = "./proc/forword2.jsp">표준 페이지 요청2</a>
+		
+	
+	<h4>include</h4>
+
+</body>
+</html>

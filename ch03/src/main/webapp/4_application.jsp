@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jsp 내장객체 - application</title>
+
+<!-- 
+		application
+		- 현제 실행중인 어플리케이션 환경 객체
+		- 어플 환경정보(ontext)를 설정하고 참조
+		
+		 -->
+</head>
+<body>
+	<h3>jsp 내장객체 - application</h3>
+	<h4>서버정보</h4>
+	<p>
+		was 정보 : <%= application.getServerInfo() %><br/>
+		get 버전 : <%= application.getMajorVersion()%>.<%= application.getMinorVersion() %><br/>
+		jsp 버전 : <%= JspFactory.getDefaultFactory().getEngineInfo().getSpecificationVersion() %> 
+	</p>
+	<h4>환경정보</h4>
+	<%
+		String p1 = application.getInitParameter("param1");
+		String p2 = application.getInitParameter("param2");
+	%>
+	<p>
+		param1 = <%= p1%><br/>
+		param2 = <%= p2%><br/>
+	</p>
+	<h4>자원정보</h4>
+	<p>
+		현재페이지(4_application.jsp)전체 시스템 경로 <br/>
+		<%= application.getRealPath("./4_application.jsp") %>
+	</p>
+	
+	<h4>로그정보</h4>
+	<%
+		application.log("로그 - 메세지1");
+		application.log("로그 - 메세지2");
+	%>
+	
+	
+</body>
+</html>

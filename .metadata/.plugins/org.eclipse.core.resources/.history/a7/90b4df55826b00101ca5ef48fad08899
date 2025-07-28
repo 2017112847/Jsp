@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jsp 내장객체 - application</title>
+</head>
+<body>
+	<h3>jsp 내장객체 - application</h3>
+	<h4>서버정보</h4>
+	<p>
+		was 정보 : <%= application.getServerInfo() %><br/>
+		get 버전 : <%= application.getMajorVersion()%>.<%= application.getMinorVersion() %>
+		jsp 버전 : <%= JspFactory.getDefaultFactory().getEngineInfo().getSpecificationVersion() %> 
+	</p>
+	<h4>환경정보</h4>
+	
+	<h4>자원정보</h4>
+	
+	<h4>로그정보</h4>
+	
+	
+</body>
+</html>
