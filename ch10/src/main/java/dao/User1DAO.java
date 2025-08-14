@@ -36,7 +36,7 @@ private final String DBCP = "jdbc/studydb";
 		}
 		
 	}
-	public User1DTO seletUser1(String uid) {
+	public User1DTO selectUser1(String uid) {
 		return null;
 	}
 	public List<User1DTO> selectAllUser1() {

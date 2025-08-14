@@ -39,6 +39,42 @@
         maxIdle="13"
         maxWaitMillis="3000"
     />
+     <Resource
+        name="jdbc/shop"
+        auth="Container"
+        type="javax.sql.DataSource"
+        driverClassName="oracle.jdbc.driver.OracleDriver"
+        url="jdbc:oracle:thin:@localhost:1521:xe"
+        username="shoperd"
+        password="1234"
+        maxTotal="13"
+        maxIdle="13"
+        maxWaitMillis="3000"
+    />
+     <Resource
+        name="jdbc/bank"
+        auth="Container"
+        type="javax.sql.DataSource"
+        driverClassName="oracle.jdbc.driver.OracleDriver"
+        url="jdbc:oracle:thin:@localhost:1521:xe"
+        username="bankerd"
+        password="1234"
+        maxTotal="13"
+        maxIdle="13"
+        maxWaitMillis="3000"
+    />
+     <Resource
+        name="jdbc/erdcollege"
+        auth="Container"
+        type="javax.sql.DataSource"
+        driverClassName="oracle.jdbc.driver.OracleDriver"
+        url="jdbc:oracle:thin:@localhost:1521:xe"
+        username="collegeerd"
+        password="1234"
+        maxTotal="13"
+        maxIdle="13"
+        maxWaitMillis="3000"
+    />
 
     <Resource
         name="jdbc/shop"

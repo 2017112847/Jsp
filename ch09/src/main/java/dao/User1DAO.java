@@ -60,7 +60,7 @@ public class User1DAO {
 			
 			Connection conn = ds.getConnection();
 			
-			String sql = "SELET * FROM USER1 WHERE user_id=?";			
+			String sql = "SELECT * FROM USER1 WHERE user_id=?";			
 			PreparedStatement psmt = conn.prepareStatement(sql);
 			psmt.setString(1,user_id);
 			

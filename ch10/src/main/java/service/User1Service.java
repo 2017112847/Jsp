@@ -14,7 +14,7 @@ private User1DAO dao = User1DAO.getInstance();
 		dao.insertUser1(dto);		
 	}
 	public User1DTO findById(String uid) {
-		return dao.seletUser1(uid);
+		return dao.selectUser1(uid);
 	}
 	public List<User1DTO> findAll() {
 		return dao.selectAllUser1();
